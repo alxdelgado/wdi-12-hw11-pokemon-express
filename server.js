@@ -13,7 +13,7 @@ const port = 5000;
 
 // route for pokemon js 
 app.get('/pokemon', (req, res) => {
-  res.send(Pokemon)
+  res.render('index.ejs')
 }); 
 
 app.listen(port, () => {
