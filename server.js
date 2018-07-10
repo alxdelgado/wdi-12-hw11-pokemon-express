@@ -11,12 +11,17 @@ const port = 5000;
 //   res.send('Welcome to the Pokemon App!');
 // }); 
 
-// route for pokemon js 
+// index route for pokemon 
 app.get('/pokemon', (req, res) => {
   res.render('index.ejs', {
     pokemon: Pokemon
   })
 }); 
+
+// Show route for pokemon 
+app.get('/pokemon/:id', (req, res) => {
+  res.send(req.params.id);
+});
 
 app.listen(port, () => {
   console.log('pokemon express is running on port: ', port);
