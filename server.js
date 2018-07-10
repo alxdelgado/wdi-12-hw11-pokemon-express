@@ -7,8 +7,13 @@ const Pokemon = require('./models/pokemon');
 const port = 5000;
 
 
+// app.get('/pokemon', (req, res) => {
+//   res.send('Welcome to the Pokemon App!');
+// }); 
+
+// route for pokemon js 
 app.get('/pokemon', (req, res) => {
-  res.render('Welcome to the Pokemon App!');
+  res.send(Pokemon)
 }); 
 
 app.listen(port, () => {
