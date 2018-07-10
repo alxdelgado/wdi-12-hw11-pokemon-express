@@ -1,0 +1,20 @@
+{
+  "name": "wdi-12-hw11-pokemon-express",
+  "version": "1.0.0",
+  "description": "Make a Pokemon app that displays data inside server-side rendered views.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alxdelgado/wdi-12-hw11-pokemon-express.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alxdelgado/wdi-12-hw11-pokemon-express/issues"
+  },
+  "homepage": "https://github.com/alxdelgado/wdi-12-hw11-pokemon-express#readme"
+}
