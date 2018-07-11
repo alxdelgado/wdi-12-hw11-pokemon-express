@@ -20,7 +20,9 @@ app.get('/pokemon', (req, res) => {
 
 // Show route for pokemon 
 app.get('/pokemon/:id', (req, res) => {
-  res.send(req.params.id);
+  res.render('show.ejs', {
+    pokemon: Pokemon[req.params.id] 
+  });
 });
 
 app.listen(port, () => {
