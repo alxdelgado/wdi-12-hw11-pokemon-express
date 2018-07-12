@@ -19,4 +19,25 @@ router.get('/:id', (req, res) => {
   });
 });
 
+// Create delete route 
+router.delete('/:id', (req, res) => {
+  pokemon.splice(req.params.id, 1)
+  res.redirect('/pokemon')
+});
+
+
+// Create an edit route
+router.get('/:id/edit', (req, res) => {
+  res.render('edit.ejs', {
+    pokemon: pokemon[req.params.i],
+    i: req.params.i
+  })
+});
+
+// Edit button submission
+router.put('/:id', (req, res) => {
+  pokemon[req.params.i] = req.body;
+  res.redirect('/pokemon');
+});
+
 module.exports = router; 
